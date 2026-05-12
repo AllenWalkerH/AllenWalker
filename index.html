@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>襄阳新昊给排水工程有限公司</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': {
+                            50: '#e6eaf0',
+                            100: '#c0c9d6',
+                            200: '#94a3ba',
+                            300: '#637799',
+                            400: '#3f557d',
+                            500: '#1a3365',
+                            600: '#152a55',
+                            700: '#112245',
+                            800: '#0d1a37',
+                            900: '#091227',
+                        },
+                        'orange': {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .bg-hero {
+            background-image: linear-gradient(rgba(26, 51, 101, 0.9), rgba(26, 51, 101, 0.7)), url('https://images.unsplash.com/photo-1581093489890-61b4d9d418b8?w=1200&h=600&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部导航栏 -->
+    <nav class="fixed top-0 left-0 right-0 bg-navy-800 text-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-orange-500 rounded flex items-center justify-center mr-3">
+                        <i class="fa fa-droplet text-white text-lg"></i>
+                    </div>
+                    <div class="hidden sm:block">
+                        <span class="text-lg md:text-xl font-bold text-white tracking-wide">襄阳新昊给排水工程有限公司</span>
+                    </div>
+                    <div class="sm:hidden">
+                        <span class="text-base font-bold text-white">新昊给排水</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-orange-400 transition-colors duration-300">首页</a>
+                    <a href="#services" class="hover:text-orange-400 transition-colors duration-300">业务范围</a>
+                    <a href="#about" class="hover:text-orange-400 transition-colors duration-300">关于我们</a>
+                    <a href="#contact" class="hover:text-orange-400 transition-colors duration-300">联系我们</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-orange-400">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="md:hidden bg-navy-700">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#home" class="block py-2 hover:text-orange-400">首页</a>
+                <a href="#services" class="block py-2 hover:text-orange-400">业务范围</a>
+                <a href="#about" class="block py-2 hover:text-orange-400">关于我们</a>
+                <a href="#contact" class="block py-2 hover:text-orange-400">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section id="home" class="bg-hero min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white text-shadow mb-6">
+                襄阳新昊给排水工程有限公司
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8">
+                专注城市给排水工程，为您提供专业的管道解决方案
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fa fa-phone mr-2"></i>立即咨询
+                </a>
+                <a href="#services" class="bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 border border-white/30">
+                    <i class="fa fa-cog mr-2"></i>了解业务
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 业务介绍卡片 -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">核心业务</h2>
+                <div class="w-20 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 业务一 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-orange-500">
+                    <div class="w-16 h-16 bg-navy-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-water text-navy-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy-800 mb-2">城市供水网络接通</h3>
+                    <p class="text-gray-600">专业承接城市供水管道安装工程，确保水质安全，为城市发展提供可靠的供水保障。</p>
+                </div>
+                <!-- 业务二 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-orange-500">
+                    <div class="w-16 h-16 bg-navy-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-tint text-navy-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy-800 mb-2">排水网络接通</h3>
+                    <p class="text-gray-600">高效建设城市排水系统，完善雨水排放和污水处理设施，保障城市水环境质量。</p>
+                </div>
+                <!-- 业务三 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-orange-500">
+                    <div class="w-16 h-16 bg-navy-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa fa-wrench text-navy-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy-800 mb-2">水网管道维修和更换</h3>
+                    <p class="text-gray-600">提供专业的管道检测、维修和更换服务，确保管网系统安全稳定运行。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-20 bg-navy-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">关于我们</h2>
+                <div class="w-16 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-gray-300 mb-4 leading-relaxed">
+                    襄阳新昊给排水工程有限公司，深耕襄阳市政给排水领域17年（2009-2026），是本地专业的市政给排水工程服务商。公司专注城市供水管网接通、排水管网施工、管道维修更换、雨污分流及老旧小区管网改造，服务覆盖襄阳全城及周边区域。
+                </p>
+                <p class="text-gray-300 mb-8 leading-relaxed">
+                    公司秉持"品质为先、安全为本、服务至上"的理念，具备专业施工团队与设备，全程提供"勘测—设计—施工—售后"一站式服务，已承接上百个市政、小区、园区给排水项目，赢得政府单位、房企及物业的一致认可，助力襄阳城市水网建设，守护居民用水安全。
+                </p>
+                <div class="inline-flex flex-wrap justify-center gap-4">
+                    <div class="bg-navy-700 px-4 py-2 rounded-lg">
+                        <i class="fa fa-users text-orange-500 mr-2"></i>
+                        <span>专业团队</span>
+                    </div>
+                    <div class="bg-navy-700 px-4 py-2 rounded-lg">
+                        <i class="fa fa-certificate text-orange-500 mr-2"></i>
+                        <span>资质齐全</span>
+                    </div>
+                    <div class="bg-navy-700 px-4 py-2 rounded-lg">
+                        <i class="fa fa-clock-o text-orange-500 mr-2"></i>
+                        <span>经验丰富</span>
+                    </div>
+                </div>
+                <div class="mt-8 inline-block bg-orange-500 text-white p-4 rounded-lg shadow-lg">
+                    <div class="text-3xl font-bold">17+</div>
+                    <div class="text-sm">年行业经验</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy-800 mb-4">联系我们</h2>
+                <div class="w-20 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
+                <!-- 联系信息 -->
+                <div class="lg:col-span-5">
+                    <div class="space-y-5">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-navy-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <i class="fa fa-map-marker text-navy-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-navy-800 mb-1">公司地址</h3>
+                                <p class="text-gray-600 text-sm">湖北省襄阳市襄城区黄家湾路50号</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-navy-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <i class="fa fa-phone text-navy-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-navy-800 mb-1">联系电话</h3>
+                                <p class="text-gray-600 text-sm">18986385858</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-navy-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <i class="fa fa-envelope text-navy-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-navy-800 mb-1">电子邮箱</h3>
+                                <p class="text-gray-600 text-sm">997936038@qq.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-navy-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <i class="fa fa-clock-o text-navy-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-navy-800 mb-1">工作时间</h3>
+                                <p class="text-gray-600 text-sm">周一至周五 8:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 联系表单 -->
+                <div class="lg:col-span-7">
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-lg">
+                        <h3 class="text-lg font-semibold text-navy-800 mb-4">在线咨询</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label class="block text-gray-700 text-xs font-medium mb-1.5">您的姓名</label>
+                                <input type="text" class="w-full px-3 py-1.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all text-sm" placeholder="请输入姓名">
+                            </div>
+                            <div class="mb-3">
+                                <label class="block text-gray-700 text-xs font-medium mb-1.5">联系电话</label>
+                                <input type="tel" class="w-full px-3 py-1.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all text-sm" placeholder="请输入电话">
+                            </div>
+                            <div class="mb-3">
+                                <label class="block text-gray-700 text-xs font-medium mb-1.5">咨询业务</label>
+                                <select class="w-full px-3 py-1.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all text-sm">
+                                    <option>请选择业务类型</option>
+                                    <option>城市供水网络接通</option>
+                                    <option>排水网络接通</option>
+                                    <option>水网管道维修和更换</option>
+                                    <option>其他业务</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-xs font-medium mb-1.5">留言内容</label>
+                                <textarea rows="3" class="w-full px-3 py-1.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all text-sm resize-none" placeholder="请描述您的需求..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 text-sm">
+                                提交咨询
+                            </button>
+                            <p class="text-gray-500 text-xs text-center mt-3">我们会在24小时内与您联系</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-navy-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+                <div class="md:col-span-5">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-orange-500 rounded flex items-center justify-center mr-3">
+                            <i class="fa fa-droplet text-white text-lg"></i>
+                        </div>
+                        <div class="hidden sm:block">
+                            <span class="text-lg font-bold text-white tracking-wide">襄阳新昊给排水工程有限公司</span>
+                        </div>
+                        <div class="sm:hidden">
+                            <span class="text-base font-bold text-white">新昊给排水</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">专注城市给排水工程，为您提供专业的管道解决方案。</p>
+                </div>
+                <div class="md:col-span-3">
+                    <h4 class="font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#home" class="hover:text-orange-400 transition-colors">首页</a></li>
+                        <li><a href="#services" class="hover:text-orange-400 transition-colors">业务范围</a></li>
+                        <li><a href="#about" class="hover:text-orange-400 transition-colors">关于我们</a></li>
+                        <li><a href="#contact" class="hover:text-orange-400 transition-colors">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4">
+                    <h4 class="font-semibold mb-4">联系方式</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><i class="fa fa-map-marker mr-2"></i>湖北省襄阳市襄城区黄家湾路50号</li>
+                        <li><i class="fa fa-phone mr-2"></i>18986385858</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-navy-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2024 襄阳新昊给排水工程有限公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 点击导航链接后关闭移动端菜单
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
